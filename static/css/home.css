@@ -1,0 +1,9 @@
+
+.navbar {
+    background: #000;
+}
+
+.carousel-inner img{
+    max-height: 91vh;
+    object-fit: cover;
+}
