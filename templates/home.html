@@ -48,11 +48,11 @@ Home
 <!-- /carousel -->
 
 <!-- section-python -->
-<div class="container-fluid">
+<div class="container">
     <div class="row">
-        <div class="col-lg-8 offset-lg-2">
+        <div class="text-center col-lg-8 offset-lg-2">
             <h2 class="text-center pt-5">¿Por qué Python?</h2>
-            <p class="text-center">Python es un lenguaje de programacion interpretado cuya filosofia hace hincapie en
+            <p class="text-justify">Python es un lenguaje de programacion interpretado cuya filosofia hace hincapie en
                 una
                 sintaxis muy limpia y un codigo muy legible, ademas es un lenguaje de programacion totalmente gratuito e
                 interpretativo. Python es de codigo abierto, multiparadigma y multiplataforma, versatilidad a la hora de
@@ -60,15 +60,16 @@ Home
         </div>
     </div>
 
-    <div class="row">
+    <div class="row mt-5">
         <div class="col-lg-2">
-            <img src="{{ url_for('static', filename='img/iconpc.png')}}" class="d-block w-50 mr-2" alt="...">
+            <img src="{{ url_for('static', filename='img/iconpc.png')}}" class="d-block w-50 ml-auto" alt="...">
         </div>
-        <div class="col-lg-2">
-            <h2 class="text-center mt-5">Aplicaciones de escritorio</h2>
-            Este tipo de aplicaciones son las que se encuentran instaladas en un computador o USB, estas aplicaciones se
-            pueden ejecutar sin internet. Python nos ofrece difeenter herramientas para crear estas aplicaciones como lo
-            es
+        <div class="col-lg-4">
+            <h2 class="text-justify mt-5">Aplicaciones de escritorio</h2>
+            <p class="text-center ">
+                Este tipo de aplicaciones son las que se encuentran instaladas en un computador o USB, estas aplicaciones se
+                pueden ejecutar sin internet. Python nos ofrece diferentes herramientas para crear estas aplicaciones, algunas de estas son:: <br>
+            </p>
             <ul>
                 <li>PyQt / PySide</li>
                 <li>PyGTK</li>
@@ -78,28 +79,39 @@ Home
             <img src="" alt="">
         </div>
         <div class="col-lg-2">
-            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.ytimg.com%2Fvi%2F-ogWHhd6CsA%2Fmaxresdefault.jpg&f=1&nofb=1"
-                alt="..." class="img-thumbnail">
+            <img src="{{ url_for('static', filename='img/iconwd.png')}}" class="d-block w-50 ml-auto" alt="...">
+        </div>
+        <div class="text-center col-lg-4">
+            <h2 class="text-justify mt-5">Desarrollo web</h2>
+            <p>
+                Python es un competidor en mundo back-end, sin embargo es una muy buena forma de empezar en este mundo, su mini framwork flask
+                nos va permitir saber como funciona la web y poder diseñar páginas web facilmente. Claro despues de tener bases en HTML, CSS y JS. 
+                Ya despues podemos pasar a un framework más potente por parte de python como lo es Django.
+            </p>
+        </div>
+    </div>
+    <div class="row pt-5 mx-auto">
+        <div class="col-lg-2">
+            <img src="{{ url_for('static', filename='img/iconds.png')}}" class="d-block w-50 ml-auto" alt="...">
+        </div>
+        <div class="text-center col-lg-4">
+            <h2 class="text-justify mt-5">Data science</h2>
+            <p>
+                Los datos son importantes hoy en día, con python tenemos la mayor gama de herramientas que nos van a permitir manipular datos con 
+                el fin de dar valor a algo. Suena complejo pero esta rama es la base de la inteligencia artificial. 
+            </p>
+            <img src="" alt="">
         </div>
         <div class="col-lg-2">
-            <h2 class="text-center mt-5">Artificial Intelligence</h2>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus pariatur eveniet consectetur, sunt eum
-            esse
-            <img src="" alt="">Imagen de python
-            obcaecati numquam ea quibusdam culpa voluptatum quidem eligendi corrupti ipsam ipsum itaque voluptas magnam
-            vel!
+            <img src="{{ url_for('static', filename='img/iconai.png')}}" class="d-block w-50 ml-auto" alt="...">
         </div>
-        <div class="col-lg-2">
-            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.ytimg.com%2Fvi%2F-ogWHhd6CsA%2Fmaxresdefault.jpg&f=1&nofb=1"
-                alt="..." class="img-thumbnail">
-        </div>
-        <div class="col-lg-2">
-            <h2 class="text-center mt-5">Web Development</h2>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus pariatur eveniet consectetur, sunt eum
-            esse
-            <img src="" alt="">Imagen de python
-            obcaecati numquam ea quibusdam culpa voluptatum quidem eligendi corrupti ipsam ipsum itaque voluptas magnam
-            vel!
+        <div class="text-center col-lg-4">
+            <h2 class="text-justify mt-5">Artificial Intelligence(AI)</h2>
+            <p>
+                Es uno de los temas más sonados. A quién no le gustaría poder enseñar a una máquina a pensar casí como lo 
+                hacemos nosotros. La AI está en todo lado cuando compartimos un post en facebook, cuando hacemos una compra por internet. Es uno de los
+                campos más dificiles pero también más apasionantes.
+            </p>
         </div>
     </div>
 </div>
