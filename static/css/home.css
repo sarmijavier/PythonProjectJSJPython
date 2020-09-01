@@ -1,13 +1,16 @@
-.carousel-inner img{
-    max-height: 91vh;
-    object-fit: cover;
+.carousel-inner img {
+  max-height: 91vh;
+  object-fit: cover;
 }
 
 .logo {
-    max-width: 7%;
+  max-width: 12%;
 }
 
-#title{
-    padding-bottom: 20%;
+#title {
+  padding-bottom: 20%;
 }
 
+.collapse a {
+  font-size: 110%;
+}
