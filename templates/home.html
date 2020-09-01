@@ -123,4 +123,18 @@ Home
     </div>
 </div>
 <!-- /section-python -->
+
+
+<!-- school-map -->
+<div class="container">
+    <div class="col">
+        <div class="row text-center">
+            {% with map=googlemap_obj("another-map", 4.505980, -74.102920, markers=[(4.505980, -74.102920), (4.505980, -74.102920)], style="height:300px;width:1100px;margin:0;") %}
+            {{map.html}}
+            {{map.js}}
+            {% endwith %}
+        </div>
+    </div>
+</div>
+<!-- /school-map -->
 {% endblock %}

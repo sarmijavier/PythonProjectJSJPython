@@ -14,3 +14,7 @@
 .collapse a {
   font-size: 110%;
 }
+
+#sndmap {
+  max-width: 500%;
+}
