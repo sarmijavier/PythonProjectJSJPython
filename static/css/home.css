@@ -1,9 +1,13 @@
-
-.navbar {
-    background: #000;
-}
-
 .carousel-inner img{
     max-height: 91vh;
     object-fit: cover;
 }
+
+.logo {
+    max-width: 7%;
+}
+
+#title{
+    padding-bottom: 20%;
+}
+
