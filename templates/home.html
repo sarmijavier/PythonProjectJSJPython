@@ -66,7 +66,7 @@ Home
         </div>
         <div class="text-justify col-lg-4">
             <h2 class="text-justify mt-5">Aplicaciones de escritorio</h2>
-            <p class="text-justify ">
+            <p class="text-justify">
                 Este tipo de aplicaciones son las que se encuentran instaladas en un computador o USB, estas aplicaciones se
                 pueden ejecutar sin internet. Python nos ofrece diferentes herramientas para crear estas aplicaciones, algunas de estas son:: <br>
             </p>
@@ -116,4 +116,18 @@ Home
     </div>
 </div>
 <!-- /section-python -->
+
+
+<!-- school-map -->
+<div class="container">
+    <div class="col">
+        <div class="row text-center">
+                {% with map=googlemap_obj("another-map", 4.505980, -74.102920, markers=[(4.505980, -74.102920), (4.505980, -74.102920)], style="height:300px;width:1100px;margin:0;") %}
+                {{map.html}}
+                {{map.js}}
+                {% endwith %}
+        </div>
+    </div>
+</div>
+<!-- /school-map -->
 {% endblock %}
