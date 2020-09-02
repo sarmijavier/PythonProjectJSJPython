@@ -15,6 +15,20 @@
   font-size: 110%;
 }
 
+#sndmap {
+  max-width: 500%;
+}
+
+#section-img img{
+  object-fit: cover;
+  width: 90%;
+  height: 70%;
+  border-radius: 34px;
+  background: #24472b;
+  box-shadow:  5px -5px 10px #1f3c25, 
+               -5px 5px 10px #295231;
+}
+
 
 @media (max-width: 500px){
   .carousel-inner img {
