@@ -3,9 +3,7 @@ from flask_bootstrap import Bootstrap
 
 
 app = Flask(__name__, template_folder='templates', static_folder='static')
-app = Flask(__name__)
 bootstrap = Bootstrap(app) 
-GoogleMaps(app)
 
 
 @app.route('/')
