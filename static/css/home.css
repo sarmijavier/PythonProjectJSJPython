@@ -15,11 +15,6 @@
   font-size: 110%;
 }
 
-#sndmap {
-  max-width: 500%;
-}
-
-
 
 @media (max-width: 500px){
   .carousel-inner img {
@@ -39,7 +34,4 @@
     font-size: 110%;
   }
   
-  #sndmap {
-    max-width: 500%;
-  } 
 }
