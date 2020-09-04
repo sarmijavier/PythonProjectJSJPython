@@ -15,34 +15,67 @@
   font-size: 110%;
 }
 
-
-#section-img img{
+#section-img img {
   object-fit: cover;
   width: 90%;
   height: 70%;
   border-radius: 34px;
   background: #24472b;
-  box-shadow:  5px -5px 10px #1f3c25, 
-               -5px 5px 10px #295231;
+  box-shadow: 5px -5px 10px #1f3c25, -5px 5px 10px #295231;
+}
+/* Style all font awesome icons */
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
 }
 
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
 
-@media (max-width: 500px){
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  background: #3b5998;
+  color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+  background: #55acee;
+  color: white;
+}
+/* Twitter */
+.fa-instagram {
+  background: #55acee;
+  color: white;
+}
+/* Twitter */
+.fa-linkedin {
+  background: #55acee;
+  color: white;
+}
+
+@media (max-width: 500px) {
   .carousel-inner img {
     max-height: 91vh;
     object-fit: cover;
   }
-  
+
   .logo {
     max-width: 12%;
   }
-  
+
   #title {
     padding-bottom: 80%;
   }
-  
+
   .collapse a {
     font-size: 110%;
   }
-  
 }
