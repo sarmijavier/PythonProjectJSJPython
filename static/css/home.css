@@ -19,6 +19,7 @@
   object-fit: cover;
   width: 90%;
   height: 70%;
+<<<<<<< HEAD
   border-radius: 34px;
   background: #24472b;
   box-shadow: 5px -5px 10px #1f3c25, -5px 5px 10px #295231;
@@ -43,6 +44,12 @@
 .fa-facebook {
   background: #3b5998;
   color: white;
+=======
+  border-radius: 22px;
+background: #1b84c0;
+box-shadow:  26px 26px 52px #1978af, 
+             -26px -26px 52px #1d90d1;
+>>>>>>> ad924a633728fe79101a4a6d57752176972453bf
 }
 
 /* Twitter */
