@@ -28,8 +28,10 @@
   padding: 20px;
   font-size: 30px;
   width: 50px;
+  height: 50px;
   text-align: center;
   text-decoration: none;
+  border-radius: 999px;
 }
 
 /* Add a hover effect if you want */
@@ -52,13 +54,18 @@
 }
 /* Twitter */
 .fa-instagram {
-  background: #55acee;
+  background: #405de6;
   color: white;
 }
 /* Twitter */
 .fa-linkedin {
-  background: #55acee;
+  background: #283e4a;
   color: white;
+}
+
+.foot {
+  background-color: #023047;
+  margin-top: 400px;
 }
 
 @media (max-width: 500px) {

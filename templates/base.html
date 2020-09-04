@@ -12,6 +12,9 @@
 {% endblock %}
 {% block content %}
 {% endblock %}
+{% block footer %}
+{% include 'footer.html' %}
+{% endblock %}
 {% block scripts %}
 <script src="{{ url_for('static', filename='js/interval.js')}}"></script>
 {{ super() }}
