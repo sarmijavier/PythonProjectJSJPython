@@ -17,7 +17,7 @@ Home
     <div class="carousel-inner">
         <div class="carousel-item active">
             <img src="{{ url_for('static', filename='img/pcs.jpg')}}" class="d-block w-100" alt="...">
-            <div id="title" class="carousel-caption d-none d-md-block">
+            <div id="title" class="carousel-caption">
                 <h1>¡Bienvenidos!</h1>
                 <p>Al curso virtual de python</p>
             </div>
@@ -31,7 +31,7 @@ Home
         </div>
         <div class="carousel-item">
             <img src="{{ url_for('static', filename='img/code.jpg')}}" class="d-block w-100" alt="...">
-            <div id="title" class="carousel-caption d-none d-md-block">
+            <div id="title" class="carousel-caption">
                 <h3>~El futuro depende de lo que hagas hoy~</h3>
             </div>
         </div>
@@ -48,11 +48,11 @@ Home
 <!-- /carousel -->
 
 <!-- section-python -->
-<div class="container-fluid">
+<div class="container">
     <div class="row">
-        <div class="col-lg-8 offset-lg-2">
+        <div class="text-center col-lg-8 offset-lg-2">
             <h2 class="text-center pt-5">¿Por qué Python?</h2>
-            <p class="text-center">Python es un lenguaje de programacion interpretado cuya filosofia hace hincapie en
+            <p class="text-justify">Python es un lenguaje de programacion interpretado cuya filosofia hace hincapie en
                 una
                 sintaxis muy limpia y un codigo muy legible, ademas es un lenguaje de programacion totalmente gratuito e
                 interpretativo. Python es de codigo abierto, multiparadigma y multiplataforma, versatilidad a la hora de
@@ -60,15 +60,18 @@ Home
         </div>
     </div>
 
-    <div class="row">
+    <div class="row mt-5 mr-auto">
         <div class="col-lg-2">
-            <img src="{{ url_for('static', filename='img/iconpc.png')}}" class="d-block w-50 mr-2" alt="...">
+            <img src="{{ url_for('static', filename='img/iconpc.png')}}" class="d-block w-50 mx-auto" alt="...">
         </div>
-        <div class="col-lg-2">
-            <h2 class="text-center mt-5">Aplicaciones de escritorio</h2>
-            Este tipo de aplicaciones son las que se encuentran instaladas en un computador o USB, estas aplicaciones se
-            pueden ejecutar sin internet. Python nos ofrece difeenter herramientas para crear estas aplicaciones como lo
-            es
+        <div class="text-justify col-lg-4">
+            <h2 class="text-justify mt-5">Aplicaciones de escritorio</h2>
+            <p class="text-justify ">
+                Este tipo de aplicaciones son las que se encuentran instaladas en un computador o USB, estas
+                aplicaciones se
+                pueden ejecutar sin internet. Python nos ofrece diferentes herramientas para crear estas aplicaciones,
+                algunas de estas son: <br>
+            </p>
             <ul>
                 <li>PyQt / PySide</li>
                 <li>PyGTK</li>
@@ -77,25 +80,70 @@ Home
             </ul>
             <img src="" alt="">
         </div>
-        <div class="col-lg-2">
-            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.ytimg.com%2Fvi%2F-ogWHhd6CsA%2Fmaxresdefault.jpg&f=1&nofb=1"
+        <div class="col-lg-2 col-md-12 col-sm-12">
+            <img src="{{ url_for('static', filename='img/iconwd.png')}}" class="d-block w-50 mx-auto" alt="...">
+        </div>
+        <div class="text-justify col-lg-4 col-md-12 col-sm-12 aling-center">
+            <h2 class="text-justify mt-5">Desarrollo web</h2>
+            <p>
+                Python es un competidor en mundo back-end, sin embargo es una muy buena forma de empezar en este mundo,
+                su mini framwork flask
+                nos va permitir saber como funciona la web y poder diseñar páginas web facilmente. Claro despues de
+                tener bases en HTML, CSS y JS.
+                Ya despues podemos pasar a un framework más potente por parte de python como lo es Django.
+            </p>
+        </div>
+    </div>
+    <div class="row pt-5 mr-auto">
+        <div class="col-lg-2 col-md-12 col-sm-12">
+            <img src="{{ url_for('static', filename='img/iconds.png')}}" class="d-block w-50 mx-auto" alt="...">
+        </div>
+        <div class="text-justify col-lg-4 col-md-12 col-sm-12 aling-center">
+            <h2 class="text-justify mt-5">Data science</h2>
+            <p>
+                Los datos son importantes hoy en día, con python tenemos la mayor gama de herramientas que nos van a
+                permitir manipular datos con
+                el fin de dar valor a algo. Suena complejo pero esta rama es la base de la inteligencia artificial.
+            </p>
+            <img src="" alt="">
+        </div>
+        <div class="col-lg-2 col-md-12 col-sm-12">
+            <img src="{{ url_for('static', filename='img/iconai.png')}}" class="d-block w-50 mx-auto" alt="...">
+        </div>
+        <div class="text-justify col-lg-4 col-md-12 col-sm-12 aling-center">
+            <h2 class="text-justify mt-5">Artificial Intelligence(AI)</h2>
+            <p>
+                Es uno de los temas más sonados. A quién no le gustaría poder enseñar a una máquina a pensar casí como
+                lo
+                hacemos nosotros. La AI está en todo lado cuando compartimos un post en facebook, cuando hacemos una
+                compra por internet. Es uno de los
+                campos más dificiles pero también más apasionantes.
+            </p>
+        </div>
+    </div>
+</div>
+<!-- /section-python -->
+
+<!-- section-imagesSchool -->
+<div class="container">
+    <h2 class="mb-5 mt-5 text-center ml-auto">Colegio Ofelia Uribe de Acosta</h2>
+    <div id="section-img" class="row text-center mt-5  ml-auto">
+        <div class="col-lg-4">
+            <img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2F3.bp.blogspot.com%2F-USJx-kuDQHA%2FT6YQxIax6QI%2FAAAAAAAAASM%2FHnI64XiaeA8%2Fs1600%2Fimagen%2Bdel%2Bcolegio.jpg&f=1&nofb=1"
                 alt="..." class="img-thumbnail">
         </div>
-        <div class="col-lg-2">
-            <h2 class="text-center mt-5">Artificial Intelligence</h2>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus pariatur eveniet consectetur, sunt eum
-            esse
-            <img src="" alt="">Imagen de python
-            obcaecati numquam ea quibusdam culpa voluptatum quidem eligendi corrupti ipsam ipsum itaque voluptas magnam
-            vel!
+        <div class="col-lg-4">
+            <img src="{{ url_for('static', filename='img/school.jpg')}}" alt="..." class="img-thumbnail">
         </div>
-        <div class="col-lg-2">
-            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.ytimg.com%2Fvi%2F-ogWHhd6CsA%2Fmaxresdefault.jpg&f=1&nofb=1"
+        <div class="col-lg-4">
+            <img src="https://www.secciona2.com/wp-content/uploads/2019/06/Obra-de-Arquitectura-Colegio-Ofelia-Uribe-Acosta-11.jpg"
                 alt="..." class="img-thumbnail">
         </div>
     </div>
 </div>
 <!-- /section-imagesSchool -->
+
+
 
 <!-- school-map -->
 <div class="container ">
@@ -109,26 +157,4 @@ Home
     </div>
 </div>
 <!-- /school-map -->
-
-<!-- footer-->
-<footer>
-    <div class="container">
-        <div class="row">
-            <div class="col-3">
-                <a href="#" class="fa fa-facebook"></a>
-            </div>
-            <div class="col-3">
-                <a href="#" class="fa fa-twitter"></a>
-            </div>
-            <div class="col-3">
-                <a href="#" class="fa fa-instagram"></a>
-            </div>
-            <div class="col-3">
-                <a href="#" class="fa fa-linkedin"></a>
-            </div>
-        </div>
-
-    </div>
-</footer>
-<!-- /footer-->
 {% endblock %}
