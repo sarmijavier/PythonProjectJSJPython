@@ -10,6 +10,27 @@
 {% block navbar %}
 {% include 'navbar.html' %}
 {% endblock %}
+{% with errors = get_flashed_messages(category_filter=["error"]) %}
+{% if errors %}
+{% for message in errors %}
+<div class="alert alert-danger alert-dismissible">
+    <button type="button" data-dismiss="alert" class="close">&times;</button>
+    {{ message }}
+</div>
+{% endfor %}
+{% endif %}
+{% endwith %}
+{% with successes = get_flashed_messages(category_filter=["success"]) %}
+{% if successes %}
+{% for message in successes %}
+<div class="alert alert-success alert-dismissible">
+    <button type="button" data-dismiss="alert" class="close">&times;</button>
+    {{ message }}
+</div>
+{% endfor %}
+{% endif %}
+{% endwith %}
+
 {% block content %}
 {% endblock %}
 {% block footer %}
