@@ -4,3 +4,30 @@
 {{ super() }}
 About
 {% endblock %}
+
+{% block content %}
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="{{ url_for('static', filename='img/about.jpeg') }}" class="d-block w-100" alt="...">
+            <div id="title" class="carousel-caption">
+                <h1>¡Conocenos!</h1>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="row mt-5">
+        <div class="col-lg-4">
+            <img src="{{ url_for('static', filename='img/sebastian.jpg')}}" alt="Sebastian" class="img-fluid">
+        </div>
+        <div class="col-lg-4">
+            <img src="{{ url_for('static', filename='img/javier.jpeg')}}" alt="Javier" class="img-fluid">
+        </div>
+        <div class="col-lg-4">
+            <img src="{{ url_for('static', filename='img/santiago.jpg')}}" alt="Santiago" class="img-fluid">
+        </div>
+    </div>
+</div>
+{% endblock %}
