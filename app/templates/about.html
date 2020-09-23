@@ -1,11 +1,4 @@
-{% extends 'base.html' %}
-
-{% block title %}
-{{ super() }}
-About
-{% endblock %}
-
-{% block content %}
+{% extends 'base.html' %} {% block title %} {{ super() }} About {% endblock %} {% block content %}
 <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
     <div class="carousel-inner">
         <div class="carousel-item active">
@@ -18,12 +11,12 @@ About
 </div>
 
 <div class="container-fluid">
-    <div class="row mt-5">
+    <div class="row mt-5 mb-5 text-center">
         <div class="col-lg-4">
             <img src="{{ url_for('static', filename='img/sebastian.jpg')}}" alt="Sebastian" class="img-fluid">
         </div>
         <div class="col-lg-4">
-            <img src="{{ url_for('static', filename='img/javier.jpeg')}}" alt="Javier" class="img-fluid">
+            <img src="{{ url_for('static', filename='img/javier.jpg')}}" alt="Javier" class="img-fluid">
         </div>
         <div class="col-lg-4">
             <img src="{{ url_for('static', filename='img/santiago.jpg')}}" alt="Santiago" class="img-fluid">
