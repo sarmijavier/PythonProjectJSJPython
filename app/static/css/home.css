@@ -1,94 +1,124 @@
 .carousel-inner img {
-  max-height: 91vh;
-  object-fit: cover;
+    max-height: 91vh;
+    object-fit: cover;
 }
 
 .logo {
-  max-width: 12%;
+    max-width: 12%;
 }
 
 #title {
-  padding-bottom: 20%;
+    padding-bottom: 20%;
 }
 
 .collapse a {
-  font-size: 110%;
+    font-size: 110%;
 }
 
 #section-img img {
-  object-fit: cover;
-  width: 100%;
-  height: 80%;
-  overflow:hidden;
-  box-shadow: 3px 5px 25px rgba(0,0,0,0.548);
-  transition: ls;
-  border-radius: 20px;
-border:none;
+    object-fit: cover;
+    width: 100%;
+    height: 80%;
+    overflow: hidden;
+    box-shadow: 3px 5px 25px rgba(0, 0, 0, 0.548);
+    transition: ls;
+    border-radius: 20px;
+    border: none;
+}
 
-}
 #section-img img:hover {
-  transform: scale(1.1);
+    transform: scale(1.1);
 }
+
+
 /* Style all font awesome icons */
+
 .fa {
-  padding: 20px;
-  font-size: 30px;
-  width: 50px;
-  height: 50px;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 999px;
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 999px;
 }
+
 
 /* Add a hover effect if you want */
+
 .fa:hover {
-  opacity: 0.7;
+    opacity: 0.7;
 }
+
 
 /* Set a specific color for each brand */
 
+
 /* Facebook */
+
 .fa-facebook {
-  background: #3b5998;
-  color: white;
+    background: #3b5998;
+    color: white;
 }
 
+
 /* Twitter */
+
 .fa-twitter {
-  background: #55acee;
-  color: white;
+    background: #55acee;
+    color: white;
 }
+
+
 /* Twitter */
+
 .fa-instagram {
-  background: #405de6;
-  color: white;
+    background: #405de6;
+    color: white;
 }
+
+
 /* Twitter */
+
 .fa-linkedin {
-  background: #283e4a;
-  color: white;
+    background: #283e4a;
+    color: white;
 }
 
 .foot {
-  background-color: #023047;
-  margin-top: 400px;
+    background-color: #023047;
+    margin-top: 400px;
+}
+
+#first-section-footer {
+    height: 200%;
+    background-color: #1c2331;
+}
+
+#first-section-footer ul li {
+    color: white;
+}
+
+#second-section-footer {
+    background-color: #161c27;
+}
+
+#second-section-footer {
+    color: white;
 }
 
 @media (max-width: 500px) {
-  .carousel-inner img {
-    max-height: 91vh;
-    object-fit: cover;
-  }
-
-  .logo {
-    max-width: 12%;
-  }
-
-  #title {
-    padding-bottom: 80%;
-  }
-
-  .collapse a {
-    font-size: 110%;
-  }
+    .carousel-inner img {
+        max-height: 91vh;
+        object-fit: cover;
+    }
+    .logo {
+        max-width: 12%;
+    }
+    #title {
+        padding-bottom: 80%;
+    }
+    .collapse a {
+        font-size: 110%;
+    }
 }
