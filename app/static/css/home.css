@@ -37,10 +37,8 @@
     padding: 20px;
     font-size: 30px;
     width: 50px;
-    height: 50px;
     text-align: center;
     text-decoration: none;
-    border-radius: 999px;
 }
 
 
@@ -57,38 +55,30 @@
 /* Facebook */
 
 .fa-facebook {
-    background: #3b5998;
+    background: #3B5998;
     color: white;
 }
 
 
 /* Twitter */
 
-.fa-twitter {
-    background: #55acee;
+.fa-github {
+    background: #24292e;
     color: white;
 }
-
-
-/* Twitter */
 
 .fa-instagram {
-    background: #405de6;
+    background: #125688;
     color: white;
 }
-
-
-/* Twitter */
 
 .fa-linkedin {
-    background: #283e4a;
+    background: #007bb5;
     color: white;
 }
 
-.foot {
-    background-color: #023047;
-    margin-top: 400px;
-}
+
+/* Add a hover effect if you want */
 
 #first-section-footer {
     height: 200%;

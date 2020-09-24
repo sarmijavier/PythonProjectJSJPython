@@ -4,7 +4,7 @@ from firebase_admin import firestore
 
 
 if not firebase_admin._apps:
-    credential = credentials.Certificate('./key_firestores.json')
+    credential = credentials.Certificate('./key-firestore.json')
     firebase_admin.initialize_app(credential)
 
 

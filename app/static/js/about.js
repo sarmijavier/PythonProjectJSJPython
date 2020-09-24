@@ -1,4 +1,3 @@
-
 var sebastian = document.querySelector("#sebastian")
 var sebastian2 = document.querySelector("#sebastian2")
 var imgSeb = document.getElementById('img-seb')
@@ -11,28 +10,31 @@ var santiago = document.querySelector("#santiago")
 var santiago2 = document.querySelector("#santiago2")
 var imgSan = document.getElementById('img-san')
 
-sebastian.addEventListener("mouseover", function () {
+sebastian.addEventListener("mouseover", function() {
     imgSeb.style.display = 'none'
-    sebastian2.innerHTML = `<div class="card" style = "width: 18rem;" >
-                            <div class="card-body">
-                                <h5 class="card-title">Sebastian Benavides</h5>
-                                <p class="card-text text-justify">
-                                Soy un estudiante de ingeniería de sistemas y computación de la universidad católica de 
-                                Colombia, voy en octavo semestre. En mi tiempo libre me gusta jugar fútbol, videojuegos y 
-                                escuchar música. Me interesan las aplicaciones de inteligencia artificial, el desarrollo web 
-                                y aprender nuevos lenguajes de programación, bases de datos y frameworks de desarrollo.</p>
-                            </div>
-                        </div >
+    sebastian2.innerHTML = `
+                        <div class="container-fluid justify-content-center">
+                            <div class="card" style = "width: 18rem;" >
+                                <div class="card-body justify-content-center aling-center mr-auto">
+                                    <h5 class="card-title">Sebastian Benavides</h5>
+                                    <p class="card-text text-justify">
+                                    Soy un estudiante de ingeniería de sistemas y computación de la universidad católica de 
+                                    Colombia, voy en octavo semestre. En mi tiempo libre me gusta jugar fútbol, videojuegos y 
+                                    escuchar música. Me interesan las aplicaciones de inteligencia artificial, el desarrollo web 
+                                    y aprender nuevos lenguajes de programación, bases de datos y frameworks de desarrollo.</p>
+                                </div>
+                            </div >
+                        </div>
         `
 })
 
-sebastian.addEventListener("mouseout", function () {
+sebastian.addEventListener("mouseout", function() {
     imgSeb.style.display = "block"
     sebastian2.innerHTML = ""
 })
 
 
-javier.addEventListener("mouseover", function () {
+javier.addEventListener("mouseover", function() {
     imgJav.style.display = 'none'
     javier2.innerHTML = `<div class="card" style = "width: 18rem;" >
                             <div class="card-body">
@@ -46,12 +48,12 @@ javier.addEventListener("mouseover", function () {
                         </div >
                         `
 })
-javier.addEventListener("mouseout", function () {
+javier.addEventListener("mouseout", function() {
     imgJav.style.display = "block"
     javier2.innerHTML = ""
 })
 
-santiago.addEventListener("mouseover", function () {
+santiago.addEventListener("mouseover", function() {
     imgSan.style.display = 'none'
     santiago2.innerHTML = `<div class="card" style = "width: 18rem;" >
                             <div class="card-body">
@@ -63,7 +65,7 @@ santiago.addEventListener("mouseover", function () {
                         </div >
 `
 })
-santiago.addEventListener("mouseout", function () {
+santiago.addEventListener("mouseout", function() {
     imgSan.style.display = "block"
     santiago2.innerHTML = ""
 })
