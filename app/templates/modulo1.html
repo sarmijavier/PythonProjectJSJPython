@@ -1,10 +1,19 @@
 {% extends 'base.html' %}
-
-
-{% block title %}
+{% block title %} 
 {{ super() }}
-Módulo 1
-{% endblock %}
+{% endblock %} 
 
-{% block content %}
+
+{% block content %} 
+
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/watch?v=8DyziWtkfBw" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+
 {% endblock %}
