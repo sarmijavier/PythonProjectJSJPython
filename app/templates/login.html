@@ -7,30 +7,32 @@ Login
 {% endblock %}
 
 {% block content %}
-    <div class="container h-100">
-        <div class="row justify-content-center h-100">
-            <div class="col-sm-8 align-self-center text-center">
-                <div class="card shadow">
-                    <div class="card-body ">
-                            <h1>Login</h1>
-                            <img src="https://img.icons8.com/wired/50/000000/change-user-male.png" class="img-fluid mt-5" alt="Responsive image">           
-                            <form action="/auth/login" method="POST">
-                                <div class="form-group mt-5">
-                                  <label for="exampleInputEmail1">Email address</label>
-                                  <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp">
-                                </div>
-                                <div class="form-group">
-                                  <label for="exampleInputPassword1">Password</label>
-                                  <input type="password" class="form-control" id="password" name="password">
-                                </div>
-                                <button type="submit" class="btn btn-primary">Submit</button>
-                              </form>
-                              <small id="emailHelp" class="form-text text-muted">Aún no estás registrado, registrate!</small>
-                                  <a href="{{ url_for('auth.register') }}">Registrate</a>
-                        </div>         
-                    </div>
+<div class="container h-100">
+    <div class="row justify-content-center h-100">
+        <div class="col-sm-8 align-self-center text-center">
+            <div class="card shadow">
+                <div class="card-body ">
+                    <h1>Iniciar Sesion</h1>
+                    <img src="https://img.icons8.com/wired/50/000000/change-user-male.png" class="img-fluid mt-5"
+                        alt="Responsive image">
+                    <form action="/auth/login" method="POST">
+                        <div class="form-group mt-5">
+                            <label for="exampleInputEmail1">Correo Electronico</label>
+                            <input type="email" class="form-control" id="email" name="email"
+                                aria-describedby="emailHelp">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Contraseña</label>
+                            <input type="password" class="form-control" id="password" name="password">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </form>
+                    <small id="emailHelp" class="form-text text-muted">Aún no estás registrado, registrate!</small>
+                    <a href="{{ url_for('auth.register') }}">Registrate</a>
                 </div>
             </div>
         </div>
-    </div>  
+    </div>
+</div>
+</div>
 {% endblock %}

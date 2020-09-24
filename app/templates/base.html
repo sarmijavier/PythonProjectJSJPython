@@ -9,6 +9,18 @@
 <div class="alert alert-success alert-dismissible">
     <button type="button" data-dismiss="alert" class="close">&times;</button> {{ message }}
 </div>
-{% endfor %} {% endif %} {% endwith %} {% block content %} {% endblock %} {% block footer %} {% include 'footer.html' %} {% endblock %} {% block scripts %}
-<script src="{{ url_for('static', filename='js/interval.js')}}"></script>
-{{ super() }} {% endblock %} {% endblock %}
+{% endfor %}
+{% endif %}
+{% endwith %}
+
+{% block content %}
+{% endblock %}
+{% block footer %}
+{% include 'footer.html' %}
+{% endblock %}
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/about.js')}}"></script>
+{{ super() }}
+{% endblock %}
+
+{% endblock %}
