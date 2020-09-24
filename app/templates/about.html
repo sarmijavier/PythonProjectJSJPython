@@ -1,4 +1,9 @@
-{% extends 'base.html' %} {% block title %} {{ super() }} About {% endblock %} {% block content %}
+{% extends 'base.html' %}
+{% block title %}
+{{ super() }} About
+{% endblock %}
+
+{% block content %}
 <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
     <div class="carousel-inner">
         <div class="carousel-item active">
@@ -12,15 +17,23 @@
 
 <div class="container-fluid">
     <div class="row mt-5 mb-5 text-center">
-        <div class="col-lg-4">
-            <img src="{{ url_for('static', filename='img/sebastian.jpg')}}" alt="Sebastian" class="img-fluid">
+
+        <div id="sebastian" class="col-lg-4">
+            <img src="{{ url_for('static', filename='img/sebastian.jpg')}}" alt="Sebastian" id='img-seb'
+                class="img-fluid">
+            <div id="sebastian2"></div>
         </div>
-        <div class="col-lg-4">
-            <img src="{{ url_for('static', filename='img/javier.jpg')}}" alt="Javier" class="img-fluid">
+
+        <div id="javier" class="col-lg-4">
+            <img src="{{ url_for('static', filename='img/javier.jpg')}}" alt="Javier" id='img-jav' class="img-fluid">
+            <div id="javier2"></div>
         </div>
-        <div class="col-lg-4">
-            <img src="{{ url_for('static', filename='img/santiago.jpg')}}" alt="Santiago" class="img-fluid">
-        </div>
+
+        <!-- <div id="santiago" class="col-lg-4">
+            <img src="{{ url_for('static', filename='img/santiago.jpg')}}" alt="Santiago" id='img-san'
+                class="img-fluid">
+            <div id="santiago2"></div>
+        </div> -->
     </div>
 </div>
 {% endblock %}
