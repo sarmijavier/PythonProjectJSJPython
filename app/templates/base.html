@@ -1,11 +1,27 @@
-{% extends 'bootstrap/base.html' %} {% block head %} {{ super() }}
+{% extends 'bootstrap/base.html' %} 
+{% block head %} 
+{{ super() }}
 
 <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css')}}">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> {% endblock %} {% block body %} {% block navbar %} {% include 'navbar.html' %} {% endblock %} {% with errors = get_flashed_messages(category_filter=["error"]) %} {% if errors %} {% for message in errors %}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+{% endblock %} 
+{% block body %} 
+{% block navbar %} 
+{% include 'navbar.html' %} 
+{% endblock %} 
+
+{% with errors = get_flashed_messages(category_filter=["error"]) %} 
+{% if errors %} 
+{% for message in errors %}
 <div class="alert alert-danger alert-dismissible">
     <button type="button" data-dismiss="alert" class="close">&times;</button> {{ message }}
 </div>
-{% endfor %} {% endif %} {% endwith %} {% with successes = get_flashed_messages(category_filter=["success"]) %} {% if successes %} {% for message in successes %}
+{% endfor %} 
+{% endif %}
+{% endwith %} 
+{% with successes = get_flashed_messages(category_filter=["success"]) %} 
+{% if successes %} 
+{% for message in successes %}
 <div class="alert alert-success alert-dismissible">
     <button type="button" data-dismiss="alert" class="close">&times;</button> {{ message }}
 </div>

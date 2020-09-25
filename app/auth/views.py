@@ -4,6 +4,7 @@ from . import auth
 from app.models import UserModel, UserData
 from app.firestore_service import get_user, create_user
 from werkzeug.security import generate_password_hash, check_password_hash
+from app.forms import Register, Login
 
 
 
@@ -11,12 +12,17 @@ from werkzeug.security import generate_password_hash, check_password_hash
 @auth.route('/login', methods=['POST', 'GET'])
 def login():
 
+    form = Login()
+
+
     if current_user.is_authenticated:
         return redirect(url_for('home'))
 
-    if request.method == 'POST':
-        email = request.form['email']
-        password = request.form['password']    
+    if form.validate_on_submit():
+
+        email = form.email.data 
+        password = form.password.data    
+
         user_doc = get_user(email)
 
         if user_doc.to_dict() is not None:
@@ -38,27 +44,32 @@ def login():
         
         return redirect(url_for('auth.login'))
 
-    return render_template('login.html')
+    return render_template('login.html', form=form)
 
 
 @auth.route('/register', methods=['POST', 'GET'])
 def register():
-    if request.method == 'POST':
 
+    form = Register()
+
+    if form.validate_on_submit():
         user ={
-            'name': request.form['name'],
-            'email': request.form['email'],
-            'password': request.form['password'],
-            'confirm_password': request.form['confirm_password'],  
+            'name': form.name.data,
+            'email': form.email.data,
+            'password': form.password.data,  
+            'confirm_password': form.confirm_password.data,    
         }
-        
+
         if len(user['password']) < 8:
+            print('1')
             flash('La contraseña debe contener por lo menos 8 caracteres', 'error')
 
         elif user['password'] == None:
+            print('2')
             flash('Contraseña no valida', 'error')
 
         elif user['password'] != user['confirm_password']:
+            print('3')
             flash('Las contraseñas no coinciden', 'error')
             return redirect(url_for('auth.register'))
         else:
@@ -77,7 +88,7 @@ def register():
                 flash('El usuario ya existe', 'error')
             
 
-    return render_template('register.html')
+    return render_template('register.html', form=form)
 
 
 
