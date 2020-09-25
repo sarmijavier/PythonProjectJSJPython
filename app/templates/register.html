@@ -1,24 +1,16 @@
-{% extends 'base.html' %}  
-{% import 'bootstrap/wtf.html' as wtf %}
-
-
-{% block title %} 
-{{ super() }} 
-Registro 
-{% endblock %} 
-{% block content %}
+{% extends 'base.html' %} {% import 'bootstrap/wtf.html' as wtf %} {% block title %} {{ super() }} Registro {% endblock %} {% block content %}
 
 <div class="container h-100">
-  <div class="row justify-content-center h-100">
-    <div class="col-sm-8 align-self-center text-center">
-      <div class="card shadow">
-        <div class="card-body ">
-          <h1>Registro</h1>
-            {{ wtf.quick_form(form) }}
+    <div class="row justify-content-center h-100">
+        <div class="col-sm-6 align-self-center text-center">
+            <div class="card shadow">
+                <div class="card-body ">
+                    <h1>Registro</h1>
+                    {{ wtf.quick_form(form) }}
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
 </div>
 </div>
 {% endblock %}
