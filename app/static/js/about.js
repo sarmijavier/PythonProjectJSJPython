@@ -10,6 +10,7 @@ var santiago = document.querySelector("#santiago")
 var santiago2 = document.querySelector("#santiago2")
 var imgSan = document.getElementById('img-san')
 
+
 sebastian.addEventListener("mouseover", function() {
     imgSeb.style.display = 'none'
     sebastian2.innerHTML = `

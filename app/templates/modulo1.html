@@ -1,25 +1,248 @@
-{% extends 'base.html' %}
-{% block title %} 
-{{ super() }}
-{% endblock %} 
+{% extends 'base.html' %} {% block title %} {{ super() }} {% endblock %} {% block content %}
 
 
-{% block content %} 
+
+
+
 
 <div class="container">
-    <div class="row">
-        <div class="col-12">
-
-</iframe>
-      </div>
+    <div class="row text-center mt-5">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+            <h1 class="display-4"> Bienvenidos al módulo 1</h1>
+            <blockquote class="blockquote">
+                <p>Los mejores emprendedores tienen dos cosas en común: Nunca se rinden y nunca paran de aprender.</p>
+                <footer class="blockquote-footer">Jhon Freddy Vega</footer>
+            </blockquote>
+        </div>
     </div>
-    <div class="col-sm-6">
-      <!-- 4:3 -->
-      <h4>4:3 Aspect Ratio</h4>
-      <div class="embed-responsive embed-responsive-4by3">
-        <iframe class="embed-responsive-item" src="//www.youtube.com/embed/zB4I68XVPzQ"></iframe>
+    <div class="col-lg-12">
+
+        <div class="card-deck mb-3 text-center">
+            <div class="card mb-4 shadow-sm">
+                <div class="card-header">
+                    <h4 class="my-0 font-weight-normal">Clase 1: Introducción al curso de Python</h4>
+                </div>
+                <div class="card-body h-100">
+                    <button type="button" class="btn btn-light" data-toggle="modal" data-target="#exampleModalCenter">
+                  <img class="card-img-top" src="{{ url_for('static', filename='img/class.jpg') }}" alt="Card image cap">
+                </button>
+                    <p class="card-text">En este video verás la introducción al curso, si tienes preguntas hazlas en el grupo!.</p>
+                </div>
+            </div>
+            <div class="card mb-4 shadow-sm">
+                <div class="card-header">
+                    <h4 class="my-0 font-weight-normal">Clase 2: Entorno de desarrollo en computador</h4>
+                </div>
+                <div class="card-body h-100">
+                    <button type="button" class="btn btn-light" data-toggle="modal" data-target="#exampleModalCenter2">
+                  <img class="card-img-top" src="{{ url_for('static', filename='img/class.jpg') }}" alt="Card image cap">
+                </button>
+                    <p class="card-text">En este video verás las herramientas con las cuales vamos a trabajar todo el curso, en este caso desde un computador.</p>
+                </div>
+            </div>
+            <div class="card mb-4 shadow-sm">
+                <div class="card-header">
+                    <h4 class="my-0 font-weight-normal">Clase 2: Entorno de desarrollo en el celular</h4>
+                </div>
+                <div class="card-body h-100">
+                    <button type="button" class="btn btn-light" data-toggle="modal" data-target="#exampleModalCenter3">
+                  <img class="card-img-top" src="{{ url_for('static', filename='img/class.jpg') }}" alt="Card image cap">
+                </button>
+                    <p class="card-text">En este video verás las herramientas con las cuales vamos a trabajar todo el curso, en este caso desde un celular. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="col-lg-12">
+
+        <div class="card-deck mb-3 text-center">
+            <div class="card mb-4 shadow-sm">
+                <div class="card-header">
+                    <h4 class="my-0 font-weight-normal">Clase 3: Variables y tipos de datos</h4>
+                </div>
+                <div class="card-body">
+                    <button type="button" class="btn btn-light" data-toggle="modal" data-target="#exampleModalCenter4">
+                <img class="card-img-top" src="{{ url_for('static', filename='img/class.jpg') }}" alt="Card image cap">
+              </button>
+                    <p class="card-text">En este video verás como hacer tus primera variables y que tipo de dato son a pesar de que esto no sea tan relevante al principio en un lenguaje como Python.</p>
+                </div>
+            </div>
+            <div class="card mb-4 shadow-sm">
+                <div class="card-header">
+                    <h4 class="my-0 font-weight-normal">Clase 4 : Operadores lógicos y operaciones matemáticas</h4>
+                </div>
+                <div class="card-body">
+                    <button type="button" class="btn btn-light" data-toggle="modal" data-target="#exampleModalCenter5">
+              <img class="card-img-top" src="{{ url_for('static', filename='img/class.jpg') }}" alt="Card image cap">
+            </button>
+                    <p class="card-text">En este video verás como utilizar los operadores matemáticos que tiene Python, además de ver diferentes tipos de operaciones matemáticas en Python.</p>
+                </div>
+            </div>
+            <div class="card mb-4 shadow-sm">
+                <div class="card-header">
+                    <h4 class="my-0 font-weight-normal">Clase 5: Input y sentencias lógicas</h4>
+                </div>
+                <div class="card-body">
+                    <button type="button" class="btn btn-light" data-toggle="modal" data-target="#exampleModalCenter6">
+              <img class="card-img-top" src="{{ url_for('static', filename='img/class.jpg') }}" alt="Card image cap">
+            </button>
+                    <p class="card-text">En este video verás como puedes pedir datos y la sentencia if y else.</p>
+                </div>
+            </div>
         </div>
     </div>
 </div>
 
+
+
+
+<!-- Modal 1 -->
+<div id="exampleModalCenter" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Clase 1: Introducción</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+            </div>
+            <div class="modal-body">
+                <div class="embed-responsive w-100 embed-responsive-16by9 z-depth-1-half">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/pjsSE-dVUUo" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button id="cerrarVideo" type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /modal -->
+
+
+
+<!-- Modal -->
+<div id="exampleModalCenter2" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Clase 2: Entorno de desarrollo en computador</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-body">
+                <div class="embed-responsive w-100 embed-responsive-16by9 z-depth-1-half">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/-ADYBNEtsd8" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button id="cerrarVideo" type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- /modal -->
+
+
+<!-- Modal -->
+<div id="exampleModalCenter3" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Clase 2: Entorno de desarrollo en el celular</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-body">
+                <div class="embed-responsive w-100 embed-responsive-16by9 z-depth-1-half">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/0BAsZFXd6UI" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button id="cerrarVideo" type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- /modal -->
+
+
+<!-- Modal -->
+<div id="exampleModalCenter4" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Clase 3: Variable y tipos de datos</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                  </button>
+            </div>
+            <div class="modal-body">
+                <div class="embed-responsive w-100 embed-responsive-16by9 z-depth-1-half">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/JB59d0Vwo0s" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button id="cerrarVideo" type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /modal -->
+
+<!-- Modal -->
+<div id="exampleModalCenter5" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Clase 4 : Operadores lógicos y operaciones matemáticas</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-body">
+                <div class="embed-responsive w-100 embed-responsive-16by9 z-depth-1-half">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Ttk17gY0b-0" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button id="cerrarVideo" type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- /modal -->
+
+<!-- Modal -->
+<div id="exampleModalCenter6" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Clase 5: Input y sentencias lógicas</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-body">
+                <div class="embed-responsive w-100 embed-responsive-16by9 z-depth-1-half">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/tXF-QI9-qUQ" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button id="cerrarVideo" type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- /modal -->
 {% endblock %}
