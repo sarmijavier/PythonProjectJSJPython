@@ -5,7 +5,8 @@
             <div class="card shadow">
                 <div class="card-body ">
                     <h1>Iniciar Sesion</h1>
-                    <img src="https://img.icons8.com/wired/50/000000/change-user-male.png" class="img-fluid mt-5" alt="Responsive image"> {{ wtf.quick_form(form) }}
+                    <img src="https://img.icons8.com/wired/50/000000/change-user-male.png" class="img-fluid mt-5" alt="Responsive image">
+                     {{ wtf.quick_form(form) }}
                     <small id="emailHelp" class="form-text text-muted">Aún no estás registrado, registrate!</small>
                     <a href="{{ url_for('auth.register') }}">Registrate</a>
                 </div>

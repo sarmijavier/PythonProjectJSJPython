@@ -1,3 +1,5 @@
+var csrf_token = "{{ csrf_token() }}";
+
 var sebastian = document.querySelector("#sebastian")
 var sebastian2 = document.querySelector("#sebastian2")
 var imgSeb = document.getElementById('img-seb')

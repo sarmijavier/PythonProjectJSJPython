@@ -40,7 +40,7 @@ def login():
             else:
                 flash('Información no validad', 'error')
         else:
-            flash('El usuario no existe!')
+            flash('El usuario no existe!', 'error')
         
         return redirect(url_for('auth.login'))
 
