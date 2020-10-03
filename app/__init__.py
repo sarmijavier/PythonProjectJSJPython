@@ -4,7 +4,7 @@
 from flask import Flask
 from flask_bootstrap import Bootstrap
 from flask_login import LoginManager
-from flask_wtf.csrf import CsrfProtect
+from flask_wtf.csrf import CSRFProtect
 
 #Models
 from .models import UserModel
@@ -15,7 +15,7 @@ from .auth import auth
 
 login_manager = LoginManager()
 login_manager.login_view = 'auth.login'
-csrf = CsrfProtect()
+csrf = CSRFProtect()
 
 
 @login_manager.user_loader
