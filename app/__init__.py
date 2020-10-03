@@ -15,6 +15,7 @@ from .auth import auth
 
 login_manager = LoginManager()
 login_manager.login_view = 'auth.login'
+csrf = CsrfProtect()
 
 
 @login_manager.user_loader
@@ -27,7 +28,7 @@ def create_app():
     bootstrap = Bootstrap(app) 
     login_manager.init_app(app)
     app.config.from_object(Config)
-    csrf = CSRFProtect(app)
+    csrf.init_app(app)
 
     app.register_blueprint(auth)
 
