@@ -4,6 +4,7 @@
 from flask import Flask
 from flask_bootstrap import Bootstrap
 from flask_login import LoginManager
+from flask_wtf.csrf import CSRFProtect
 
 #Models
 from .models import UserModel
@@ -26,6 +27,7 @@ def create_app():
     bootstrap = Bootstrap(app) 
     login_manager.init_app(app)
     app.config.from_object(Config)
+    csrf = CSRFProtect(app)
 
     app.register_blueprint(auth)
 
