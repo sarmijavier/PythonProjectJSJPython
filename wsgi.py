@@ -22,7 +22,8 @@ def about():
 @app.route('/modulo1')
 @login_required
 def modulo1():
-
     return render_template('modulo1.html')
 
-
+if __name__ == '__main__':
+    app.run(debug=1)
+    
