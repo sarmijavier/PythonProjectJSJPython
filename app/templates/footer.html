@@ -4,7 +4,6 @@
 
         <!-- Footer Elements -->
         <div class="row">
-            {% if current_user.is_authenticated %}
             <div class="col">
                 <!-- Call to action -->
                 <ul class="list-unstyled list-inline text-center py-2">
@@ -14,20 +13,6 @@
                 </ul>
                 <!-- Call to action -->
             </div>
-            {% else %}
-            <div class="col">
-                <!-- Call to action -->
-                <ul class="list-unstyled list-inline text-center py-2">
-                    <li class="list-inline-item">
-                        <h5 class="mb-1">Registrate</h5>
-                    </li>
-                    <li class="list-inline-item">
-                        <a href="{{ url_for('auth.register') }}" class="btn btn-outline-white btn-rounded">Registro!</a>
-                    </li>
-                </ul>
-                <!-- Call to action -->
-            </div>
-            {% endif %}
         </div>
     </footer>
 </div>

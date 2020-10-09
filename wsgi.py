@@ -10,6 +10,16 @@ from app import create_app
 app = create_app()
 
 
+@app.errorhandler(404)
+def not_found(error):
+    return render_template('404.html', error=error)
+
+
+@app.errorhandler(500)
+def server_error(error):
+    return render_template('500.html', error=error)
+
+
 @app.route('/')
 def home():
     return render_template("home.html")
@@ -20,7 +30,6 @@ def about():
     return render_template("about.html")
 
 @app.route('/modulo1')
-@login_required
 def modulo1():
 
     return render_template('modulo1.html')
