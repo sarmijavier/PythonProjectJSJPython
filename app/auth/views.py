@@ -92,10 +92,15 @@ def register():
 
 
 
-@auth.route('/logout')
-@login_required
-def logout():
-    logout_user()
-    flash('Regresa pronto', 'success')
+#@auth.route('/logout')
+#@login_required
+#def logout():
+#    logout_user()
+#    flash('Regresa pronto', 'success')
 
-    return redirect(url_for('auth.login'))
+#    return redirect(url_for('auth.login'))
+
+@auth.route('/logout')
+def logout():
+
+    return '<h1>Lo siento :( </h1>'
