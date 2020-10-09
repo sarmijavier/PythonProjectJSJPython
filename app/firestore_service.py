@@ -4,12 +4,12 @@ from firebase_admin import firestore
 from firebase_admin import auth
 
 
-if not firebase_admin._apps:
-    credential = credentials.Certificate('./key-firestore.json')
-    firebase_admin.initialize_app(credential)
+#if not firebase_admin._apps:
+#    credential = credentials.Certificate('./key-firestore.json')
+#    firebase_admin.initialize_app(credential)
 
 
-db = firestore.client()
+#db = firestore.client()
 
 def get_user(user_id):
     return db.collection(u'users').document(user_id).get()
