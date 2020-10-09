@@ -1,8 +1,8 @@
-{% extends 'base.html' %} 
-{% block title %} 
-{{ super() }} 
-About 
-{% endblock %} 
+{% extends 'base.html' %}
+{% block title %}
+{{ super() }}
+About
+{% endblock %}
 {% block content %}
 <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
     <div class="carousel-inner">
@@ -16,39 +16,53 @@ About
 </div>
 
 <div class="container-fluid">
+
     <div class="row mt-5 mb-5 text-center justify-content-center aling-center">
-        <div id="sebastian" class="col-lg-4">
-            <img src="{{ url_for('static', filename='img/sebastian.jpg')}}" alt="Sebastian" id='img-seb' class="img-fluid">
-            <div id="sebastian2"></div>
-            <div>
-                <a href="https://www.facebook.com/sebastian.benavides.18/" class="fa fa-facebook" target="_blank"></a>
-                <a href="https://www.instagram.com/sebastian10b/" class="fa fa-instagram" target="_blank"></a>
-                <a href="https://www.linkedin.com/in/jhoan-sebastian-1b03161a2/" class="fa fa-linkedin" target="_blank"></a>
-                <a href="https://github.com/jsbd10" class="fa fa-github" target="_blank"></a>
-            </div>
+        <div class="col-lg-4 hover">
+            <p class="card-text text-justify">Soy un estudiante de ingeniería de sistemas y computación de la
+                universidad católica de
+                Colombia, voy en octavo semestre. En mi tiempo libre me gusta jugar fútbol, videojuegos y
+                escuchar música. Me interesan las aplicaciones de inteligencia artificial, el desarrollo web
+                y aprender nuevos lenguajes de programación, bases de datos y frameworks de desarrollo.</p>
+            <img src="{{ url_for('static', filename='img/sebastian.jpg')}}" alt="">
         </div>
-
-        <div id="javier" class="col-lg-4">
-            <img src="{{ url_for('static', filename='img/javier.jpg')}}" alt="Javier" id='img-jav' class="img-fluid">
-            <div id="javier2"></div>
-            <div>
-                <a href="https://www.facebook.com/SarmiJavier" class="fa fa-facebook" target="_blank"></a>
-                <a href="https://www.instagram.com/sarmijavier/" class="fa fa-instagram" target="_blank"></a>
-                <a href="https://www.linkedin.com/in/h-javier-sarmiento-y-28085a19a/" class="fa fa-linkedin" target="_blank"></a>
-                <a href="https://github.com/sarmijavier" class="fa fa-github" target="_blank"></a>
-            </div>
+        <div class="col-lg-4 hover">
+            <p class="card-text text-justify">Estudiante de ingeniería de sistemas e informática. Desarrollador e
+                informática en curso.
+                Me gusta escuchar música y aprender algo nuevo cada día. Nunca pares de aprender y
+                ¿Cómo puedo ayudarte?</p>
+            <img src="{{ url_for('static', filename='img/javier.jpg')}}" alt="">
         </div>
-
-        <div id="santiago" class="col-lg-4">
-            <img src="{{ url_for('static', filename='img/santiago.jpg')}}" alt="Santiago" id='img-san' class="img-fluid">
-            <div id="santiago2"></div>
-            <div>
-                <a href="https://www.facebook.com/santi.valencia.121" class="fa fa-facebook" target="_blank"></a>
-                <a href="https://www.instagram.com/dr_santiago09/" class="fa fa-instagram" target="_blank"></a>
-                <a href="https://www.linkedin.com/in/david-santiago-1ba72219b/" class="fa fa-linkedin" target="_blank"></a>
-                <a href="https://github.com/santiagorestrepoo09" class="fa fa-github" target="_blank"></a>
-            </div>
+        <div class="col-lg-4 hover">
+            <p class="card-text text-justify">Soy un estudiante de ingeniería de sistemas en octavo
+                semestre, tengo 20 años. Me gusta la música, temas relacionados con la ingeniería de datos,
+                blockchain, aprendizaje automático y desarrollo web.</p>
+            <img src="{{ url_for('static', filename='img/santiago.jpg')}}" alt="">
         </div>
     </div>
+
+    <div class="row mt-5 mb-5 text-center justify-content-center aling-center">
+        <div class="col-lg-4">
+            <a href="https://www.facebook.com/sebastian.benavides.18/" class="fa fa-facebook" target="_blank"></a>
+            <a href="https://www.instagram.com/sebastian10b/" class="fa fa-instagram" target="_blank"></a>
+            <a href="https://www.linkedin.com/in/jhoan-sebastian-1b03161a2/" class="fa fa-linkedin" target="_blank"></a>
+            <a href="https://github.com/jsbd10" class="fa fa-github" target="_blank"></a>
+        </div>
+        <div class="col-lg-4">
+            <a href="https://www.facebook.com/SarmiJavier" class="fa fa-facebook" target="_blank"></a>
+            <a href="https://www.instagram.com/sarmijavier/" class="fa fa-instagram" target="_blank"></a>
+            <a href="https://www.linkedin.com/in/h-javier-sarmiento-y-28085a19a/" class="fa fa-linkedin"
+                target="_blank"></a>
+            <a href="https://github.com/sarmijavier" class="fa fa-github" target="_blank"></a>
+        </div>
+        <div class="col-lg-4">
+            <a href="https://www.facebook.com/santi.valencia.121" class="fa fa-facebook" target="_blank"></a>
+            <a href="https://www.instagram.com/dr_santiago09/" class="fa fa-instagram" target="_blank"></a>
+            <a href="https://www.linkedin.com/in/david-santiago-1ba72219b/" class="fa fa-linkedin" target="_blank"></a>
+            <a href="https://github.com/santiagorestrepoo09" class="fa fa-github" target="_blank"></a>
+        </div>
+    </div>
+
+
 </div>
 {% endblock %}
