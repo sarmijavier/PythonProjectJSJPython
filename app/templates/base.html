@@ -32,6 +32,9 @@
 {% block content %}
 {% endblock %}
 {% block footer %}
+{% block scripts %}
+{{ super() }}
+{% endblock %}
 {% include 'footer.html' %}
 {% endblock %}
 
