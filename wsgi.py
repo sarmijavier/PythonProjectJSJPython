@@ -33,6 +33,10 @@ def about():
 def modulo1():
     return render_template('modulo1.html')
 
+@app.route('/modulo2')
+def modulo2():
+    return render_template('modulo2.html')
+
 if __name__ == '__main__':
     app.run(debug=1)
     

@@ -1,0 +1,149 @@
+{% extends 'base.html' %} {% block title %} {{ super() }} {% endblock %} {% block content %}
+
+
+
+
+
+
+<div class="container">
+    <div class="row text-center mt-5">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+            <h1 class="display-4"> Bienvenidos al módulo 2</h1>
+            <blockquote class="blockquote">
+                <p>A veces la vida te golpea en la cabeza con un ladrillo</p>
+                <footer class="blockquote-footer">Steeve Jobs</footer>
+            </blockquote>
+        </div>
+    </div>
+    <div class="col-lg-12">
+
+        <div class="card-deck mb-3 text-center">
+            <div class="card mb-4 shadow-sm">
+                <div class="card-header">
+                    <h4 class="my-0 font-weight-normal">Clase 1: Ciclo For</h4>
+                </div>
+                <div class="card-body h-100">
+                    <button type="button" class="btn btn-light" data-toggle="modal" data-target="#exampleModalCenter">
+                        <img class="card-img-top" src="{{ url_for('static', filename='img/class.jpg') }}"
+                            alt="Card image cap">
+                    </button>
+                    <p class="card-text text-justify">En este video verás la introducción al curso, si tienes preguntas
+                        hazlas en el grupo!.</p>
+                </div>
+            </div>
+            <div class="card mb-4 shadow-sm">
+                <div class="card-header">
+                    <h4 class="my-0 font-weight-normal">Clase 2: Ciclo While</h4>
+                </div>
+                <div class="card-body h-100">
+                    <button type="button" class="btn btn-light" data-toggle="modal" data-target="#exampleModalCenter2">
+                        <img class="card-img-top" src="{{ url_for('static', filename='img/class.jpg') }}"
+                            alt="Card image cap">
+                    </button>
+                    <p class="card-text text-justify">En este video verás las herramientas con las cuales vamos a
+                        trabajar todo el curso, en este caso desde un computador.</p>
+                </div>
+            </div>
+            <div class="card mb-4 shadow-sm">
+                <div class="card-header">
+                    <h4 class="my-0 font-weight-normal">Clase 3: Funciones Especiales</h4>
+                </div>
+                <div class="card-body">
+                    <button type="button" class="btn btn-light" data-toggle="modal" data-target="#exampleModalCenter3">
+                        <img class="card-img-top" src="{{ url_for('static', filename='img/class.jpg') }}"
+                            alt="Card image cap">
+                    </button>
+                    <p class="card-text text-justify">En este video verás como hacer tus primera variables y que tipo de
+                        dato son a pesar de que esto no sea tan relevante al principio en un lenguaje como Python.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 text-center">
+            <img src="{{ url_for('static', filename='img/actividad2.png') }}" class="img-fluid" alt="Responsive image">
+        </div>
+    </div>
+</div>
+
+
+<!-- Modal 1 -->
+<div id="exampleModalCenter" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog"
+    aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Clase 1: Ciclo for</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="embed-responsive w-100 embed-responsive-16by9 z-depth-1-half">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Wx-UaicEUvM"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button id="cerrarVideo" type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /modal -->
+
+<!-- Modal -->
+<div id="exampleModalCenter2" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog"
+    aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Clase 2: Ciclo While</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="embed-responsive w-100 embed-responsive-16by9 z-depth-1-half">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/H3PXudXdvpc"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button id="cerrarVideo" type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- /modal -->
+
+
+<!-- Modal -->
+<div id="exampleModalCenter3" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog"
+    aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Clase 3: Funciones Especiales</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="embed-responsive w-100 embed-responsive-16by9 z-depth-1-half">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/byRw2fsjppI"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button id="cerrarVideo" type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- /modal -->
+
+{% endblock %}
