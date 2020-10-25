@@ -37,6 +37,10 @@ def modulo1():
 def modulo2():
     return render_template('modulo2.html')
 
+@app.route('/modulo3')
+def modulo3():
+    return render_template('modulo3.html')
+
 if __name__ == '__main__':
     app.run(debug=1)
     
