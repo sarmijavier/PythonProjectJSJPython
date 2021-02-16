@@ -4,5 +4,5 @@ Python, Flask, heroku and firebase.
  
 [Project's link on Heroku](https://jsjpython.herokuapp.com/ "Project's link on Heroku")
 
-![](images/image.png)
+![](image.png)
 
